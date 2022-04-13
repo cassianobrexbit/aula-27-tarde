@@ -127,6 +127,70 @@ form input:focus{
     font-size: 15px;
 }
 
+@media(max-width: 950px){
+
+    .container{
+        flex-direction: column;
+    }
+
+    .left{
+        width: 400px;
+        align-content: center;
+        align-items: center;
+    }
+
+    .left p{
+        height: 75px;
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width:500px){
+
+    .right{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form{
+        width:350px;
+        align-content: center;
+        align-items: center;
+    }
+
+    .left p{
+        height: 100%;
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width:370px){
+    .right{
+        display:flex;
+        justify-content: center;
+    }
+
+    .left{
+        display:flex;
+        justify-content: center;
+    }
+
+    .left img{
+        height: 95px;
+    }
+
+    .left p, .right p{
+        display: none;
+    }
+
+    form input, .right__forget, .right__loginBtn, .right__sign-upBtn{
+        font-size:12;
+    }
+}
 
 
 
